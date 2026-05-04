@@ -1,0 +1,14 @@
+{
+  "name": "privygate-0g-storage",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Optional 0G Storage upload helper for the PrivyGate audit manifest.",
+  "scripts": {
+    "upload:audit": "node upload-audit.mjs ../docs/hackathon/privygate_0g_storage_audit_manifest.json"
+  },
+  "dependencies": {
+    "@0gfoundation/0g-storage-ts-sdk": "^1.2.6",
+    "ethers": "6.13.1"
+  }
+}

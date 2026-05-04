@@ -1,0 +1,80 @@
+{
+  "schema": "privygate.storage-audit.v1",
+  "project": "PrivyGate",
+  "generated_at_utc": "2026-05-04T00:00:00Z",
+  "purpose": "Upload-ready 0G Storage audit manifest for an agent authorization decision.",
+  "prototype_boundary": {
+    "backend": "symbolic-field-v1",
+    "cryptography": "symbolic research backend; not production cryptography",
+    "verification_location": "off-chain Python prototype/API layer",
+    "chain_role": "0G Chain registry and public audit trail",
+    "storage_role": "0G Storage audit manifest persistence"
+  },
+  "authorization_decision": {
+    "agent": "ResearchAgent",
+    "tool": "private-dataset.read",
+    "message_hash": "c8facacbe48b39f56eb8999eab808369ef91388738fc2db433de029c514c6a82",
+    "policy": "University:role:student AND Lab:role:researcher",
+    "alice": {
+      "accepted": true,
+      "reason": "accepted",
+      "matched_attributes": [
+        "University:role:student",
+        "Lab:role:researcher"
+      ],
+      "audit_hash": "710dc108d10a974785dd2c20bc0e319eca7a241df717cdc2475b1c9a12e8f0b7",
+      "signature_id": "20dde92428f7cefc2535d0fc6658641a0a54e39c043ff81b7bb5d473fa63525f"
+    },
+    "bob": {
+      "accepted": false,
+      "reason": "insufficient non-revoked credentials for policy"
+    },
+    "revocation": {
+      "credential_id": "98c55cc18a5b4721ca4a43d9b7449eb7cf736fdd73cfe55a910e69d54e956ec8",
+      "accepted_after_revocation": false,
+      "reason": "credential revoked: Lab:role:researcher",
+      "audit_hash": "23b86777c6fec776880bbebe5ec5a6acf60b5a937c60bedaa5e452a45ca8e80f"
+    }
+  },
+  "authorities": [
+    {
+      "authority_id": "University",
+      "public_key_hash": "a19592f8ce2aaa6829d8e5849469a2fe31a619845973de6eb80fdc063479fc0f"
+    },
+    {
+      "authority_id": "Lab",
+      "public_key_hash": "02492ef156a755f25cbbec8a41d31ede2f3c6a9325bc43c64e291c5cc79c23a0"
+    },
+    {
+      "authority_id": "DAO",
+      "public_key_hash": "2ab21b7f9abf29e1a3b34b357f44e6b02de9aeefab17beeb487e85ae8a3082dd"
+    }
+  ],
+  "chain_evidence": {
+    "network": "0G Mainnet",
+    "chain_id": 16661,
+    "registry_contract": "0x1b55C901A69fE53a70F0011579d3576684FAAdc0",
+    "explorer_contract": "https://chainscan.0g.ai/address/0x1b55C901A69fE53a70F0011579d3576684FAAdc0",
+    "deploy_tx": "https://chainscan.0g.ai/tx/0xa28e74c61c34c8652a07845d5fca6f443d816487ca85e7576c44839576259251",
+    "authority_university_tx": "https://chainscan.0g.ai/tx/0x64c8563ca32e96f8949aad0b348abc354adedb38fed103b5deae5af7b7748d5f",
+    "authority_lab_tx": "https://chainscan.0g.ai/tx/0x361e66b3e21f2eb9740c5ff3dc5db42c5dd08e994c1919de8c75523f994065aa",
+    "policy_tx": "https://chainscan.0g.ai/tx/0x4846aa7e3a522281666ab181cdb66c7ae787c59ad0d557bf29718decd8906c21",
+    "verification_success_tx": "https://chainscan.0g.ai/tx/0x5fdfeb82d5fcd30863fb245a0ce2c7e0922f6aea2a7b68989beac976b7159ab0",
+    "revocation_tx": "https://chainscan.0g.ai/tx/0xcf406dfbc72c86abe86c380eb341077523e07a6a6925b1bce0cecb78427abd55",
+    "verification_after_revocation_tx": "https://chainscan.0g.ai/tx/0x2f26b9630ecc42c1fdfef41e2d3af1e1c0611d6028406d30d271adbd1fa1dfcf"
+  },
+  "storage_upload": {
+    "status": "upload-ready",
+    "root_hash": null,
+    "tx_hash": null,
+    "indexer_rpc": "https://indexer-storage-turbo.0g.ai",
+    "network_note": "Upload this manifest with storage/upload-audit.mjs after setting a private key in the shell environment."
+  },
+  "redaction": {
+    "contains_private_key": false,
+    "contains_seed_phrase": false,
+    "contains_raw_identity_document": false,
+    "contains_raw_attribute_secret_component": false
+  },
+  "manifest_sha256_without_this_field": "e760bad9008f6beea01e9d005209db8bcec83953ac38ed96cc3fa11df39aa64f"
+}

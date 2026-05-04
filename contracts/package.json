@@ -1,0 +1,20 @@
+{
+  "name": "privygate-contracts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "check:og": "hardhat run scripts/check-network.js --network og",
+    "check:og:galileo": "hardhat run scripts/check-network.js --network ogGalileo",
+    "deploy:og": "hardhat run scripts/deploy.js --network og",
+    "deploy:og:galileo": "hardhat run scripts/deploy.js --network ogGalileo",
+    "record:demo:og": "hardhat run scripts/record-demo-events.js --network og",
+    "record:demo:og:galileo": "hardhat run scripts/record-demo-events.js --network ogGalileo"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^3.0.0",
+    "hardhat": "^3.4.1"
+  }
+}

@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+dist/
+build/
+cache/
+artifacts/
+coverage/
+.coverage/
+ignition/deployments/
+contracts/.hardhat-home/
+contracts/.hardhat-local/
+contracts/types/
+
+# Local outputs
+*.log
+.env
+.env.*
+experiments/results/
+data/generated/
+docs/hackathon/submission_links.local.json
+
+# Office temp files
+~$*.docx
+~$*.pptx
+~$*.xlsx

@@ -1,0 +1,61 @@
+1
+00:00:00,000 --> 00:00:12,000
+PrivyGate is a privacy-preserving multi-authority attribute authorization prototype for autonomous agents on 0G.
+
+2
+00:00:12,000 --> 00:00:23,000
+It is built for cases where an agent needs access to private data or protected tools,
+but the user should not reveal their full identity or every credential they own.
+
+3
+00:00:23,000 --> 00:00:33,000
+Wallet ownership is not enough for real access control. PrivyGate turns access into a policy proof instead of identity disclosure.
+
+4
+00:00:33,000 --> 00:00:45,000
+Independent authorities issue attributes, such as university status or lab role.
+
+5
+00:00:45,000 --> 00:00:55,000
+The requester creates an authorization signature for a specific tool call and policy.
+0G Chain acts as the auditable registry, and 0G Storage stores the redacted audit manifest.
+
+6
+00:00:55,000 --> 00:01:08,000
+Here Alice has both required attributes: University role student and Lab role researcher.
+
+7
+00:01:08,000 --> 00:01:24,000
+Her agent requests access to private-dataset.read. PrivyGate verifies that the policy is satisfied and returns accept.
+
+8
+00:01:24,000 --> 00:01:37,000
+Now Bob tries the same request. Bob only has the university student attribute.
+
+9
+00:01:37,000 --> 00:01:48,000
+He does not have the lab researcher credential, so the policy cannot be satisfied and the request is rejected.
+
+10
+00:01:48,000 --> 00:02:00,000
+Next, Alice's lab researcher credential is revoked.
+
+11
+00:02:00,000 --> 00:02:10,000
+After revocation, her old authorization no longer verifies.
+
+12
+00:02:10,000 --> 00:02:24,000
+This contract is the 0G registry layer. It records authorities, policy hashes, revocation state, and verification events.
+
+13
+00:02:24,000 --> 00:02:36,000
+The storage audit manifest stores redacted policy metadata, decision hashes, and public chain evidence.
+
+14
+00:02:36,000 --> 00:02:52,000
+This hackathon version uses a symbolic field backend. It validates the workflow, but it is not production cryptography yet.
+
+15
+00:02:52,000 --> 00:03:00,000
+PrivyGate demonstrates multi-authority, revocable, policy-based private authorization with Chain and Storage evidence on 0G.

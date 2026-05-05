@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PrivyGate Demo</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">0G APAC Hackathon MVP</p>
+          <h1>PrivyGate</h1>
+        </div>
+        <dl class="status-grid" aria-label="prototype status">
+          <div>
+            <dt>Backend</dt>
+            <dd>symbolic-field-v1</dd>
+          </div>
+          <div>
+            <dt>Agent</dt>
+            <dd>ResearchAgent</dd>
+          </div>
+          <div>
+            <dt>Tool</dt>
+            <dd>private-dataset.read</dd>
+          </div>
+        </dl>
+      </header>
+
+      <section class="hero-grid" aria-label="authorization demo">
+        <aside class="policy-panel">
+          <div class="section-title">
+            <span class="mono">POLICY</span>
+            <strong>2 of 2 required</strong>
+          </div>
+          <div class="policy-expression">
+            <span>University:role:student</span>
+            <b>AND</b>
+            <span>Lab:role:researcher</span>
+          </div>
+
+          <div class="actor-stack" aria-label="demo actors">
+            <button class="actor active" type="button" data-scenario="alice">
+              <span class="actor-name">Alice</span>
+              <span class="actor-attrs">student + researcher</span>
+            </button>
+            <button class="actor" type="button" data-scenario="bob">
+              <span class="actor-name">Bob</span>
+              <span class="actor-attrs">student only</span>
+            </button>
+            <button class="actor danger" type="button" data-scenario="revoked">
+              <span class="actor-name">Alice after revocation</span>
+              <span class="actor-attrs">researcher credential revoked</span>
+            </button>
+          </div>
+        </aside>
+
+        <section class="result-panel" aria-live="polite">
+          <div class="section-title">
+            <span class="mono">VERIFY</span>
+            <strong id="scenarioName">Alice request</strong>
+          </div>
+          <div id="resultBadge" class="result accept">
+            <span class="result-label">ACCEPT</span>
+            <span id="resultReason">policy satisfied</span>
+          </div>
+          <dl class="request-grid">
+            <div>
+              <dt>Message</dt>
+              <dd>invoke private-dataset.read for lab dataset summary</dd>
+            </div>
+            <div>
+              <dt>Matched attributes</dt>
+              <dd id="matchedAttributes">University:role:student, Lab:role:researcher</dd>
+            </div>
+            <div>
+              <dt>Audit hash</dt>
+              <dd id="auditHash" class="hash">audit:8b1f7ac4f64d</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="chain-panel">
+          <div class="section-title">
+            <span class="mono">0G REGISTRY</span>
+            <strong>Mainnet evidence complete</strong>
+          </div>
+          <svg class="architecture" viewBox="0 0 560 180" role="img" aria-label="PrivyGate authorization architecture">
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z"></path>
+              </marker>
+            </defs>
+            <g class="node authority" transform="translate(16 18)">
+              <rect width="132" height="54" rx="6"></rect>
+              <text x="18" y="24">University</text>
+              <text x="18" y="42">Lab / DAO</text>
+            </g>
+            <g class="node user" transform="translate(214 18)">
+              <rect width="132" height="54" rx="6"></rect>
+              <text x="18" y="24">User</text>
+              <text x="18" y="42">Agent operator</text>
+            </g>
+            <g class="node gateway" transform="translate(412 18)">
+              <rect width="132" height="54" rx="6"></rect>
+              <text x="18" y="24">PrivyGate</text>
+              <text x="18" y="42">Gateway</text>
+            </g>
+            <g class="node chain" transform="translate(115 108)">
+              <rect width="148" height="54" rx="6"></rect>
+              <text x="18" y="24">0G Chain</text>
+              <text x="18" y="42">Registry</text>
+            </g>
+            <g class="node tool" transform="translate(330 108)">
+              <rect width="148" height="54" rx="6"></rect>
+              <text x="18" y="24">Protected</text>
+              <text x="18" y="42">Agent Tool</text>
+            </g>
+            <path class="edge" d="M148 45 H214" marker-end="url(#arrow)"></path>
+            <path class="edge" d="M346 45 H412" marker-end="url(#arrow)"></path>
+            <path class="edge" d="M450 72 C450 95 438 100 404 108" marker-end="url(#arrow)"></path>
+            <path class="edge" d="M412 135 H263" marker-end="url(#arrow)"></path>
+          </svg>
+          <ol id="registryEvents" class="event-list">
+            <li>registerAuthority(University)</li>
+            <li>registerAuthority(Lab)</li>
+            <li>registerPolicy(ResearchPolicy)</li>
+            <li>recordVerification(success)</li>
+          </ol>
+          <div class="chain-links" aria-label="0G mainnet links">
+            <a href="https://chainscan.0g.ai/address/0x1b55C901A69fE53a70F0011579d3576684FAAdc0">0G contract</a>
+            <a href="https://chainscan.0g.ai/tx/0x5fdfeb82d5fcd30863fb245a0ce2c7e0922f6aea2a7b68989beac976b7159ab0">success tx</a>
+            <a href="https://chainscan.0g.ai/tx/0x2f26b9630ecc42c1fdfef41e2d3af1e1c0611d6028406d30d271adbd1fa1dfcf">revoked tx</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="trace-grid" aria-label="verification details">
+        <section>
+          <div class="section-title">
+            <span class="mono">CREDENTIALS</span>
+            <strong>Demo authorities</strong>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Authority</th>
+                <th>Attribute</th>
+                <th>Public key hash</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>University</td>
+                <td>role:student</td>
+                <td class="hash">pk:2c8d6e1b91af</td>
+              </tr>
+              <tr>
+                <td>Lab</td>
+                <td>role:researcher</td>
+                <td class="hash">pk:f7460a92b3d5</td>
+              </tr>
+              <tr>
+                <td>DAO</td>
+                <td>role:member</td>
+                <td class="hash">pk:4d219c870afe</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <div class="section-title">
+            <span class="mono">0G STORAGE</span>
+            <strong>Audit manifest</strong>
+          </div>
+          <div class="storage-copy">
+            <dl>
+              <div>
+                <dt>Manifest</dt>
+                <dd><a href="../../docs/hackathon/privygate_0g_storage_audit_manifest.json">privygate_0g_storage_audit_manifest.json</a></dd>
+              </div>
+              <div>
+                <dt>Decision record</dt>
+                <dd id="storageDecision">Alice accepted policy-bound tool access</dd>
+              </div>
+              <div>
+                <dt>Manifest hash</dt>
+                <dd id="storageManifestHash" class="hash">e760bad9008f6beea01e9d005209db8bcec83953ac38ed96cc3fa11df39aa64f</dd>
+              </div>
+              <div>
+                <dt>0G Storage upload</dt>
+                <dd class="hash">root: 0xe8cc7ce846e8952caa41f491041dbd424d89dd762f55b9e7482f36295d252e8f</dd>
+              </div>
+              <div>
+                <dt>Storage transaction</dt>
+                <dd><a href="https://chainscan.0g.ai/tx/0xdc192a3713bb96baad3880c1dce0c1a089d3b9b02c6783d1d4afa990960ac66f">0xdc192a37...960ac66f</a></dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <section>
+          <div class="section-title">
+            <span class="mono">BOUNDARY</span>
+            <strong>Research prototype</strong>
+          </div>
+          <div class="boundary-copy">
+            <p>Off-chain attribute-signature workflow. On-chain registry and audit evidence on 0G.</p>
+            <p>Current cryptographic backend: symbolic pairing-style field model, not production cryptography.</p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

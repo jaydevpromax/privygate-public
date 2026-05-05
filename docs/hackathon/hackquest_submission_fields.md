@@ -91,7 +91,7 @@ python .\scripts\privygate_cli.py
 |---|---|
 | GitHub repo | `https://github.com/jaydevpromax/privygate-public` |
 | Demo video | [Demo video](https://youtu.be/P52F4F0H-QI) |
-| X post | `https://x.com/Jaydevpromax/status/2051512060941631883?s=20` |
+| X post | `https://x.com/Jaydevpromax/status/2051522134015685119?s=20` |
 | 0G contract | `0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
 | 0G explorer contract | `https://chainscan.0g.ai/address/0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
 | Deploy transaction | `https://chainscan.0g.ai/tx/0xa28e74c61c34c8652a07845d5fca6f443d816487ca85e7576c44839576259251` |

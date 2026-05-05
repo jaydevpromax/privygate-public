@@ -24,7 +24,7 @@ PrivyGate 让多个独立机构签发属性，用户或 agent 操作者只证明
 0G 在这里作为可审计登记层，用于记录 authority、公钥哈希、policy hash、撤销状态和验证事件。
 
 GitHub: https://github.com/jaydevpromax/privygate-public
-Demo: <DEMO_VIDEO_URL>
+Demo: https://youtu.be/P52F4F0H-QI
 0G Explorer: https://chainscan.0g.ai/address/0x1b55C901A69fE53a70F0011579d3576684FAAdc0
 
 ## English Version
@@ -47,7 +47,7 @@ Current hackathon build:
 0G is used as the auditable registry layer for authorities, public-key hashes, policy hashes, revocations, and verification events.
 
 GitHub: https://github.com/jaydevpromax/privygate-public
-Demo: <DEMO_VIDEO_URL>
+Demo: https://youtu.be/P52F4F0H-QI
 0G Explorer: https://chainscan.0g.ai/address/0x1b55C901A69fE53a70F0011579d3576684FAAdc0
 
 ## 短版
@@ -61,7 +61,7 @@ Instead of revealing full identity data, a requester proves it satisfies a polic
 Built with a Python symbolic prototype, CLI demo, and 0G mainnet registry contract.
 
 GitHub: https://github.com/jaydevpromax/privygate-public
-Demo: <DEMO_VIDEO_URL>
+Demo: https://youtu.be/P52F4F0H-QI
 0G Explorer: https://chainscan.0g.ai/address/0x1b55C901A69fE53a70F0011579d3576684FAAdc0
 
 ## 带标签版
@@ -82,7 +82,7 @@ Built for the 0G APAC Hackathon:
 - 0G auditable registry design
 
 GitHub: https://github.com/jaydevpromax/privygate-public
-Demo: <DEMO_VIDEO_URL>
+Demo: https://youtu.be/P52F4F0H-QI
 0G Explorer: https://chainscan.0g.ai/address/0x1b55C901A69fE53a70F0011579d3576684FAAdc0
 
 #0GHackathon #BuildOn0G #AIagents #Privacy #Web3 #AccessControl
@@ -91,7 +91,7 @@ Demo: <DEMO_VIDEO_URL>
 
 | 占位符 | 替换为 |
 |---|---|
-| `<DEMO_VIDEO_URL>` | 3 分钟以内 Demo 视频链接 |
+| `https://youtu.be/P52F4F0H-QI` | 3 分钟以内 Demo 视频链接 |
 | `0G mainnet contract address` | `0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
 | `0G Explorer activity link` | `https://chainscan.0g.ai/address/0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
 

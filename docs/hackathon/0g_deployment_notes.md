@@ -116,14 +116,14 @@ The helper uses `OG_RPC_URL` when provided, defaults to `https://evmrpc.0g.ai`, 
 | Evidence | Status | Value |
 |---|---|---|
 | Network | DONE | 0G Galileo Testnet, Chain ID `16602` |
-| Registry contract address | DONE | `0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
+| Registry contract address | READY | `0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
 | Explorer contract link | DONE | `https://chainscan-galileo.0g.ai/address/0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
 | Deployment tx | DONE | `https://chainscan-galileo.0g.ai/tx/0x2bf6b4211b749b6480ee90883bdd53e2765f4be476c54427acfbddf20658ff25` |
 | Authority registration tx: University | DONE | `https://chainscan-galileo.0g.ai/tx/0xd7f4f3c518622cf84624eb3963e3e1f6b88a8f67f3c4489bb93f2d3ec8a95966` |
 | Authority registration tx: Lab | DONE | `https://chainscan-galileo.0g.ai/tx/0x59aea3b20bbdd2c001ec3df9bbb7ff48273bbf99fa1ebbda5d383d0b4aa601a9` |
-| Policy registration tx | DONE | `https://chainscan-galileo.0g.ai/tx/0xa6a9c84bd8dc7768bf68d4df982f0eabe1f6fe7b2d841940557ffd3af6d29965` |
-| Verification success tx | DONE | `https://chainscan-galileo.0g.ai/tx/0xbaf958047bdf3d8e67558f0ac789a0c321760ffdee0b4121ef923994b669e29c` |
-| Revocation tx | DONE | `https://chainscan-galileo.0g.ai/tx/0xdd4d07831304f18f017f5558a1c741d34ff3ea8af1d2cbe8b143b6b36b54baeb` |
+| Policy registration tx | READY | [policy tx](https://chainscan.0g.ai/tx/0x4846aa7e3a522281666ab181cdb66c7ae787c59ad0d557bf29718decd8906c21) |
+| Verification success tx | READY | [verification success](https://chainscan.0g.ai/tx/0x5fdfeb82d5fcd30863fb245a0ce2c7e0922f6aea2a7b68989beac976b7159ab0) |
+| Revocation tx | READY | [revocation](https://chainscan.0g.ai/tx/0xcf406dfbc72c86abe86c380eb341077523e07a6a6925b1bce0cecb78427abd55) |
 | Verification after revocation tx | DONE | `https://chainscan-galileo.0g.ai/tx/0xe55a6fd080df42a15d55dd9f956e86ce84b85f926e78d01962a531bd77304814` |
 
 This rehearsal proves that the deployment scripts, registry contract, and event-recording flow work end to end on 0G Galileo. It does not replace the required 0G mainnet final evidence.
@@ -133,14 +133,14 @@ This rehearsal proves that the deployment scripts, registry contract, and event-
 | Evidence | Status | Value |
 |---|---|---|
 | Network | DONE | 0G Mainnet, Chain ID `16661` |
-| Registry contract address | DONE | `0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
+| Registry contract address | READY | `0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
 | Explorer contract link | DONE | `https://chainscan.0g.ai/address/0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
 | Deployment tx | DONE | `https://chainscan.0g.ai/tx/0xa28e74c61c34c8652a07845d5fca6f443d816487ca85e7576c44839576259251` |
 | Authority registration tx: University | DONE | `https://chainscan.0g.ai/tx/0x64c8563ca32e96f8949aad0b348abc354adedb38fed103b5deae5af7b7748d5f` |
 | Authority registration tx: Lab | DONE | `https://chainscan.0g.ai/tx/0x361e66b3e21f2eb9740c5ff3dc5db42c5dd08e994c1919de8c75523f994065aa` |
-| Policy registration tx | DONE | `https://chainscan.0g.ai/tx/0x4846aa7e3a522281666ab181cdb66c7ae787c59ad0d557bf29718decd8906c21` |
-| Verification success tx | DONE | `https://chainscan.0g.ai/tx/0x5fdfeb82d5fcd30863fb245a0ce2c7e0922f6aea2a7b68989beac976b7159ab0` |
-| Revocation tx | DONE | `https://chainscan.0g.ai/tx/0xcf406dfbc72c86abe86c380eb341077523e07a6a6925b1bce0cecb78427abd55` |
+| Policy registration tx | READY | [policy tx](https://chainscan.0g.ai/tx/0x4846aa7e3a522281666ab181cdb66c7ae787c59ad0d557bf29718decd8906c21) |
+| Verification success tx | READY | [verification success](https://chainscan.0g.ai/tx/0x5fdfeb82d5fcd30863fb245a0ce2c7e0922f6aea2a7b68989beac976b7159ab0) |
+| Revocation tx | READY | [revocation](https://chainscan.0g.ai/tx/0xcf406dfbc72c86abe86c380eb341077523e07a6a6925b1bce0cecb78427abd55) |
 | Verification after revocation tx | DONE | `https://chainscan.0g.ai/tx/0x2f26b9630ecc42c1fdfef41e2d3af1e1c0611d6028406d30d271adbd1fa1dfcf` |
 
 ### 0G Storage Evidence

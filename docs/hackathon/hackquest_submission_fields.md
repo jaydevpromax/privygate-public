@@ -2,7 +2,7 @@
 
 最后更新：2026-05-04
 
-用途：提交 0G APAC Hackathon 前，把常见表单字段、公开说明和链接占位集中到一个文件中。正式提交前必须把所有 `TODO` 链接替换为真实公开地址。
+用途：提交 0G APAC Hackathon 前，把常见表单字段、公开说明和链接集中到一个文件中。正式提交前必须确认所有公开地址可匿名访问。
 
 官方要求来源：`https://www.hackquest.io/en/hackathons/0G-APAC-Hackathon`
 
@@ -17,14 +17,14 @@
 | Secondary track | Privacy & Sovereign Infrastructure |
 | Project stage | Research prototype / hackathon MVP |
 | Repository | [Repository](https://github.com/jaydevpromax/privygate-public) |
-| Demo video | TODO: demo video URL, under 3 minutes |
+| Demo video | [Demo video](https://youtu.be/P52F4F0H-QI) |
 | 0G contract address | `0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
-| 0G explorer link | `https://chainscan.0g.ai/address/0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
+| 0G explorer link | [0G explorer link](https://chainscan.0g.ai/address/0x1b55C901A69fE53a70F0011579d3576684FAAdc0) |
 | 0G Storage audit manifest | `docs/hackathon/privygate_0g_storage_audit_manifest.json` |
 | 0G Storage manifest hash | `e760bad9008f6beea01e9d005209db8bcec83953ac38ed96cc3fa11df39aa64f` |
 | 0G Storage root hash | `0xe8cc7ce846e8952caa41f491041dbd424d89dd762f55b9e7482f36295d252e8f` |
 | 0G Storage tx | `https://chainscan.0g.ai/tx/0xdc192a3713bb96baad3880c1dce0c1a089d3b9b02c6783d1d4afa990960ac66f` |
-| X public post | TODO: X post URL |
+| X public post | [X public post](https://x.com/Jaydevpromax/status/2051512060941631883?s=20) |
 
 Recommended preview image: `docs/hackathon/assets/privygate-share-card.png`
 
@@ -90,8 +90,8 @@ python .\scripts\privygate_cli.py
 | Item | Placeholder |
 |---|---|
 | GitHub repo | `https://github.com/jaydevpromax/privygate-public` |
-| Demo video | `TODO_DEMO_VIDEO_URL` |
-| X post | `TODO_X_POST_URL` |
+| Demo video | [Demo video](https://youtu.be/P52F4F0H-QI) |
+| X post | `https://x.com/Jaydevpromax/status/2051512060941631883?s=20` |
 | 0G contract | `0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
 | 0G explorer contract | `https://chainscan.0g.ai/address/0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
 | Deploy transaction | `https://chainscan.0g.ai/tx/0xa28e74c61c34c8652a07845d5fca6f443d816487ca85e7576c44839576259251` |
@@ -119,12 +119,12 @@ PrivyGate protects autonomous-agent tool calls with privacy-preserving attribute
 
 | Status | Check |
 |---|---|
-| TODO | GitHub repository is public and contains the latest commit. |
+| READY | GitHub repository is public and contains the latest commit. |
 | DONE | Root `README.md` contains real 0G evidence links. |
 | DONE | `docs/hackathon/0g_deployment_notes.md` contains deployed contract and transaction URLs. |
 | DONE | 0G Storage audit manifest is generated and referenced by hash. |
 | DONE | 0G Storage root and transaction hash are recorded after upload. |
-| TODO | Demo video is under 3 minutes and shows local CLI plus 0G explorer evidence. |
-| TODO | X post is public and points to the project or demo. |
-| TODO | HackQuest form links are tested in a private browser window. |
-| TODO | Submission screenshot or confirmation ID is saved locally. |
+| READY | Demo video is under 3 minutes and shows local CLI plus 0G explorer evidence. |
+| READY | X post is public and points to the project or demo. |
+| MANUAL | HackQuest form links are tested in a private browser window. |
+| MANUAL | Submission screenshot or confirmation ID is saved locally after form submission. |

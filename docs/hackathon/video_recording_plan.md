@@ -120,11 +120,11 @@ PrivyGate brings multi-authority, revocable, policy-based private authorization 
 
 - `0x1b55C901A69fE53a70F0011579d3576684FAAdc0`
 - `https://chainscan.0g.ai/address/0x1b55C901A69fE53a70F0011579d3576684FAAdc0`
-- `<AUTHORITY_REGISTRATION_TX>`
-- `<POLICY_REGISTRATION_TX>`
-- `<VERIFICATION_SUCCESS_TX>`
-- `<REVOCATION_TX>`
-- `<VERIFICATION_FAILURE_TX>`
+- `https://chainscan.0g.ai/tx/0x64c8563ca32e96f8949aad0b348abc354adedb38fed103b5deae5af7b7748d5f`
+- `https://chainscan.0g.ai/tx/0x4846aa7e3a522281666ab181cdb66c7ae787c59ad0d557bf29718decd8906c21`
+- `https://chainscan.0g.ai/tx/0x5fdfeb82d5fcd30863fb245a0ce2c7e0922f6aea2a7b68989beac976b7159ab0`
+- `https://chainscan.0g.ai/tx/0xcf406dfbc72c86abe86c380eb341077523e07a6a6925b1bce0cecb78427abd55`
+- `https://chainscan.0g.ai/tx/0x2f26b9630ecc42c1fdfef41e2d3af1e1c0611d6028406d30d271adbd1fa1dfcf`
 
 ## 链上部署暂未完成时的降级版本
 

@@ -24,7 +24,7 @@
 | 0G Storage manifest hash | `e760bad9008f6beea01e9d005209db8bcec83953ac38ed96cc3fa11df39aa64f` |
 | 0G Storage root hash | `0xe8cc7ce846e8952caa41f491041dbd424d89dd762f55b9e7482f36295d252e8f` |
 | 0G Storage tx | `https://chainscan.0g.ai/tx/0xdc192a3713bb96baad3880c1dce0c1a089d3b9b02c6783d1d4afa990960ac66f` |
-| X public post | [X public post](https://x.com/Jaydevpromax/status/2051512060941631883?s=20) |
+| X public post | [X public post](https://x.com/Jaydevpromax/status/2051522134015685119?s=20) |
 
 Recommended preview image: `docs/hackathon/assets/privygate-share-card.png`
 

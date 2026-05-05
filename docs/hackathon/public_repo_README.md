@@ -100,6 +100,20 @@ The static web demo can be opened directly without a build step:
 app/web/index.html
 ```
 
+This repository also includes a GitHub Pages workflow for hosting the same static demo:
+
+```text
+.github/workflows/pages.yml
+```
+
+After GitHub Pages is enabled for the public repository, the expected hosted demo URL is:
+
+```text
+https://jaydevpromax.github.io/privygate-public/
+```
+
+Only use the hosted URL publicly after the workflow succeeds and the page opens in a private browser window.
+
 Generate the 0G Storage audit manifest:
 
 ```powershell

@@ -17,6 +17,7 @@ It intentionally excludes thesis deliverables, defense materials, project contro
 - `scripts/privygate_cli.py`
 - `scripts/run_core_demo.py`
 - `scripts/update_submission_links.py`
+- `.github`
 - `app`
 - `contracts`
 - `docs/engineering`
@@ -37,6 +38,7 @@ It intentionally excludes thesis deliverables, defense materials, project contro
 ## Before Publishing
 
 1. Run `python scripts/hackathon_readiness_check.py` inside this export.
-2. Replace final GitHub, video, X, contract, and Explorer links.
-3. Run strict readiness after replacing links.
-4. Publish this export to a clean public repository or orphan public branch, not the private thesis repository history.
+2. If publishing the hosted web demo, enable GitHub Pages with the included `.github/workflows/pages.yml` workflow.
+3. Replace final GitHub, video, X, contract, and Explorer links.
+4. Run strict readiness after replacing links.
+5. Publish this export to a clean public repository or orphan public branch, not the private thesis repository history.

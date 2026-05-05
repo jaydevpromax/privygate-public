@@ -1,6 +1,6 @@
 # Python 原型实现状态
 
-最后更新：2026-05-02
+最后更新：2026-05-05
 
 ## 当前状态
 
@@ -22,32 +22,36 @@ setup -> authority_setup -> register_authority -> user_setup
 | `src/privygate/hashing.py` | 哈希工具 |
 | `src/privygate/registry.py` | 本地登记器 |
 | `tests/test_core_flow.py` | 单元测试 |
-| `scripts/run_core_demo.py` | 演示脚本 |
+| `scripts/privygate_cli.py` | 录屏友好的演示脚本，支持文本和 JSON 输出 |
 | `experiments/benchmark_core.py` | 基准脚本 |
 | `contracts/contracts/PrivyGateRegistry.sol` | 链上辅助登记合约 |
 | `contracts/hardhat.config.js` | Hardhat 3 合约工程配置 |
 | `contracts/test/PrivyGateRegistry.test.js` | 合约本地测试 |
-| `contracts/scripts/deploy.js` | 0G 部署脚本 |
-| `contracts/scripts/record-demo-events.js` | 0G Demo 事件记录脚本 |
+| `contracts/scripts/deploy.js` | 合约部署脚本 |
+| `contracts/scripts/record-demo-events.js` | Demo 事件记录脚本 |
 | `app/api/service.py` | API 服务层 |
 | `app/api/main.py` | 可选 FastAPI 路由入口 |
 | `tests/test_api_service.py` | API 服务层测试 |
+| `scripts/generate_storage_audit_manifest.py` | 脱敏审计摘要生成器 |
+| `tests/test_storage_audit_manifest.py` | 审计摘要测试 |
 
 ## 测试结果
 
 命令：
 
 ```powershell
-$env:PYTHONPATH='src'
-& 'C:\Users\86152\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' -m unittest discover -s tests -v
+$env:PYTHONPATH='src;.'
+python -m unittest discover -s tests -v
 ```
 
 结果：
 
-- Python 单元测试全部通过。
+- Python 单元测试 18 个全部通过。
 - Hardhat 合约测试 6 个用例全部通过。
 - 覆盖成功签名验证、属性不足、撤销、混合用户凭证、错误机构公钥、消息篡改。
 - API 服务层覆盖 seed demo、签名验证、属性不足和撤销。
+- 提交材料测试覆盖链接替换、URL 校验和合约地址校验。
+- Storage 测试覆盖 audit manifest 的决策字段、主网证据和脱敏声明。
 
 ## Demo 结果
 
@@ -55,7 +59,7 @@ $env:PYTHONPATH='src'
 
 ```powershell
 $env:PYTHONPATH='src'
-& 'C:\Users\86152\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' '.\scripts\run_core_demo.py'
+python .\scripts\privygate_cli.py
 ```
 
 验证结果：
@@ -70,7 +74,7 @@ $env:PYTHONPATH='src'
 
 ```powershell
 $env:PYTHONPATH='src'
-& 'C:\Users\86152\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' '.\experiments\benchmark_core.py'
+python .\experiments\benchmark_core.py
 ```
 
 输出：
@@ -82,11 +86,11 @@ $env:PYTHONPATH='src'
 ## 后续工程任务
 
 1. 增加真实 pairing 后端可行性评估。（已完成文档，见 `pairing_backend_evaluation.md`）
-2. 安装 FastAPI/uvicorn 后启动 HTTP 服务。
-3. 获取 0G RPC、钱包和测试资金后部署 `PrivyGateRegistry`。
-4. 将 Demo 流程接入 0G APAC 参赛叙事。
+2. 如需 Web API 演示，再安装 FastAPI/uvicorn 并启动 HTTP 服务。
+3. 如需更强密码学实验，接入真实 pairing 后端并复用现有测试集。
+4. 若扩展审计 manifest，生成新版本并记录版本关系。
 
-说明：第 2 项的可选路由入口已完成，但当前环境未安装 FastAPI/uvicorn。合约工程已经完成本地依赖安装、编译和测试，下一步阻塞点转为 0G RPC、钱包和测试资金。
+说明：第 2 项的可选路由入口已完成。合约工程已经完成本地依赖安装、编译和测试；审计摘要生成器也已完成脱敏边界测试。论文国内提交版不把外部网络部署作为必要实验条件。
 
 ## 后端迁移判断
 

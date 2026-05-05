@@ -100,11 +100,19 @@ The static web demo can be opened directly without a build step:
 app/web/index.html
 ```
 
-Public hackathon links:
+This repository also includes a GitHub Pages workflow for hosting the same static demo:
 
-- HackQuest project: https://www.hackquest.io/projects/PrivyGate
-- Demo video: https://youtu.be/P52F4F0H-QI
-- X post: https://x.com/Jaydevpromax/status/2051567541915722051?s=20
+```text
+.github/workflows/pages.yml
+```
+
+After GitHub Pages is enabled for the public repository, the expected hosted demo URL is:
+
+```text
+https://jaydevpromax.github.io/privygate-public/
+```
+
+Only use the hosted URL publicly after the workflow succeeds and the page opens in a private browser window.
 
 Generate the 0G Storage audit manifest:
 
@@ -214,13 +222,13 @@ Current status: 0G mainnet deployment complete; 0G Storage audit manifest upload
 | Evidence | Value |
 |---|---|
 | 0G contract address | `0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
-| Explorer link | [explorer](https://chainscan.0g.ai/address/0x1b55C901A69fE53a70F0011579d3576684FAAdc0) |
+| Explorer link | https://chainscan.0g.ai/address/0x1b55C901A69fE53a70F0011579d3576684FAAdc0 |
 | Deploy tx | https://chainscan.0g.ai/tx/0xa28e74c61c34c8652a07845d5fca6f443d816487ca85e7576c44839576259251 |
-| Authority registration tx | [authority tx](https://chainscan.0g.ai/tx/0x64c8563ca32e96f8949aad0b348abc354adedb38fed103b5deae5af7b7748d5f) |
-| Policy registration tx | [policy tx](https://chainscan.0g.ai/tx/0x4846aa7e3a522281666ab181cdb66c7ae787c59ad0d557bf29718decd8906c21) |
-| Verification success tx | [verification success](https://chainscan.0g.ai/tx/0x5fdfeb82d5fcd30863fb245a0ce2c7e0922f6aea2a7b68989beac976b7159ab0) |
-| Revocation tx | [revocation](https://chainscan.0g.ai/tx/0xcf406dfbc72c86abe86c380eb341077523e07a6a6925b1bce0cecb78427abd55) |
-| Verification failure tx | [verification failure](https://chainscan.0g.ai/tx/0x2f26b9630ecc42c1fdfef41e2d3af1e1c0611d6028406d30d271adbd1fa1dfcf) |
+| Authority registration tx | https://chainscan.0g.ai/tx/0x64c8563ca32e96f8949aad0b348abc354adedb38fed103b5deae5af7b7748d5f |
+| Policy registration tx | https://chainscan.0g.ai/tx/0x4846aa7e3a522281666ab181cdb66c7ae787c59ad0d557bf29718decd8906c21 |
+| Verification success tx | https://chainscan.0g.ai/tx/0x5fdfeb82d5fcd30863fb245a0ce2c7e0922f6aea2a7b68989beac976b7159ab0 |
+| Revocation tx | https://chainscan.0g.ai/tx/0xcf406dfbc72c86abe86c380eb341077523e07a6a6925b1bce0cecb78427abd55 |
+| Verification failure tx | https://chainscan.0g.ai/tx/0x2f26b9630ecc42c1fdfef41e2d3af1e1c0611d6028406d30d271adbd1fa1dfcf |
 | Storage audit manifest | `docs/hackathon/privygate_0g_storage_audit_manifest.json` |
 | Storage audit manifest hash | `e760bad9008f6beea01e9d005209db8bcec83953ac38ed96cc3fa11df39aa64f` |
 | 0G Storage root hash | `0xe8cc7ce846e8952caa41f491041dbd424d89dd762f55b9e7482f36295d252e8f` |

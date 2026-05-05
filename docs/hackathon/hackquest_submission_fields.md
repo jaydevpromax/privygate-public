@@ -25,7 +25,7 @@
 | 0G Storage manifest hash | `e760bad9008f6beea01e9d005209db8bcec83953ac38ed96cc3fa11df39aa64f` |
 | 0G Storage root hash | `0xe8cc7ce846e8952caa41f491041dbd424d89dd762f55b9e7482f36295d252e8f` |
 | 0G Storage tx | `https://chainscan.0g.ai/tx/0xdc192a3713bb96baad3880c1dce0c1a089d3b9b02c6783d1d4afa990960ac66f` |
-| X public post | [X public post](https://x.com/Jaydevpromax/status/2051522134015685119?s=20) |
+| X public post | [X public post](https://x.com/Jaydevpromax/status/2051567541915722051?s=20) |
 
 Recommended preview image: `docs/hackathon/assets/privygate-share-card.png`
 
@@ -93,7 +93,7 @@ python .\scripts\privygate_cli.py
 | GitHub repo | `https://github.com/jaydevpromax/privygate-public` |
 | HackQuest project | `https://www.hackquest.io/projects/PrivyGate` |
 | Demo video | [Demo video](https://youtu.be/P52F4F0H-QI) |
-| X post | `https://x.com/Jaydevpromax/status/2051522134015685119?s=20` |
+| X post | `https://x.com/Jaydevpromax/status/2051567541915722051?s=20` |
 | 0G contract | `0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
 | 0G explorer contract | `https://chainscan.0g.ai/address/0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
 | Deploy transaction | `https://chainscan.0g.ai/tx/0xa28e74c61c34c8652a07845d5fca6f443d816487ca85e7576c44839576259251` |

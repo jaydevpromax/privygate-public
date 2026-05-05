@@ -162,7 +162,7 @@ python .\scripts\hackathon_readiness_check.py --strict
 | HackQuest 项目页或提交编号 | https://www.hackquest.io/projects/PrivyGate |
 | GitHub commit hash | See latest public repository `main` branch |
 | Demo video URL | https://youtu.be/P52F4F0H-QI |
-| X post URL | https://x.com/Jaydevpromax/status/2051522134015685119?s=20 |
+| X post URL | https://x.com/Jaydevpromax/status/2051567541915722051?s=20 |
 | 0G contract address | 0x1b55C901A69fE53a70F0011579d3576684FAAdc0 |
 | 0G deploy transaction | https://chainscan.0g.ai/tx/0xa28e74c61c34c8652a07845d5fca6f443d816487ca85e7576c44839576259251 |
 | 0G Storage manifest hash | 待填写 |

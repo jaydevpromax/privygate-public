@@ -104,7 +104,7 @@ Public hackathon links:
 
 - HackQuest project: https://www.hackquest.io/projects/PrivyGate
 - Demo video: https://youtu.be/P52F4F0H-QI
-- X post: https://x.com/Jaydevpromax/status/2051522134015685119?s=20
+- X post: https://x.com/Jaydevpromax/status/2051567541915722051?s=20
 
 Generate the 0G Storage audit manifest:
 

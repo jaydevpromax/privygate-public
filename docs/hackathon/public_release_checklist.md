@@ -158,13 +158,13 @@ python .\scripts\hackathon_readiness_check.py --strict
 
 | 项目 | 记录 |
 |---|---|
-| HackQuest 提交时间 | 待填写 |
-| HackQuest 项目页或提交编号 | 待填写 |
-| GitHub commit hash | 待填写 |
-| Demo video URL | 待填写 |
-| X post URL | 待填写 |
-| 0G contract address | 待填写 |
-| 0G deploy transaction | 待填写 |
+| HackQuest 提交时间 | 2026-05-05 |
+| HackQuest 项目页或提交编号 | https://www.hackquest.io/zh-cn/projects/PrivyGate |
+| GitHub commit hash | See latest public repository `main` branch |
+| Demo video URL | https://youtu.be/P52F4F0H-QI |
+| X post URL | https://x.com/Jaydevpromax/status/2051522134015685119?s=20 |
+| 0G contract address | 0x1b55C901A69fE53a70F0011579d3576684FAAdc0 |
+| 0G deploy transaction | https://chainscan.0g.ai/tx/0xa28e74c61c34c8652a07845d5fca6f443d816487ca85e7576c44839576259251 |
 | 0G Storage manifest hash | 待填写 |
 | 0G Storage root/tx | root `0xe8cc7ce846e8952caa41f491041dbd424d89dd762f55b9e7482f36295d252e8f`，tx `0xdc192a3713bb96baad3880c1dce0c1a089d3b9b02c6783d1d4afa990960ac66f` |
 

@@ -16,6 +16,7 @@
 | Primary track | Agentic Infrastructure & OpenClaw Lab |
 | Secondary track | Privacy & Sovereign Infrastructure |
 | Project stage | Research prototype / hackathon MVP |
+| HackQuest project | [HackQuest project](https://www.hackquest.io/zh-cn/projects/PrivyGate) |
 | Repository | [Repository](https://github.com/jaydevpromax/privygate-public) |
 | Demo video | [Demo video](https://youtu.be/P52F4F0H-QI) |
 | 0G contract address | `0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
@@ -90,6 +91,7 @@ python .\scripts\privygate_cli.py
 | Item | Placeholder |
 |---|---|
 | GitHub repo | `https://github.com/jaydevpromax/privygate-public` |
+| HackQuest project | `https://www.hackquest.io/zh-cn/projects/PrivyGate` |
 | Demo video | [Demo video](https://youtu.be/P52F4F0H-QI) |
 | X post | `https://x.com/Jaydevpromax/status/2051522134015685119?s=20` |
 | 0G contract | `0x1b55C901A69fE53a70F0011579d3576684FAAdc0` |
@@ -126,5 +128,6 @@ PrivyGate protects autonomous-agent tool calls with privacy-preserving attribute
 | DONE | 0G Storage root and transaction hash are recorded after upload. |
 | READY | Demo video is under 3 minutes and shows local CLI plus 0G explorer evidence. |
 | READY | X post is public and points to the project or demo. |
-| MANUAL | HackQuest form links are tested in a private browser window. |
+| DONE | HackQuest form links are tested in a private browser window. |
+| DONE | HackQuest project page is public: `https://www.hackquest.io/zh-cn/projects/PrivyGate`. |
 | MANUAL | Submission screenshot or confirmation ID is saved locally after form submission. |

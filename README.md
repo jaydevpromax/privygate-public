@@ -106,13 +106,13 @@ This repository also includes a GitHub Pages workflow for hosting the same stati
 .github/workflows/pages.yml
 ```
 
-After GitHub Pages is enabled for the public repository, the expected hosted demo URL is:
+Hosted web demo:
 
 ```text
 https://jaydevpromax.github.io/privygate-public/
 ```
 
-Only use the hosted URL publicly after the workflow succeeds and the page opens in a private browser window.
+This GitHub Pages URL was verified on 2026-05-06 and can be used as the judge-friendly walkthrough.
 
 Generate the 0G Storage audit manifest:
 

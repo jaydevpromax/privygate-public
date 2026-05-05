@@ -159,7 +159,7 @@ python .\scripts\hackathon_readiness_check.py --strict
 | 项目 | 记录 |
 |---|---|
 | HackQuest 提交时间 | 2026-05-05 |
-| HackQuest 项目页或提交编号 | https://www.hackquest.io/zh-cn/projects/PrivyGate |
+| HackQuest 项目页或提交编号 | https://www.hackquest.io/projects/PrivyGate |
 | GitHub commit hash | See latest public repository `main` branch |
 | Demo video URL | https://youtu.be/P52F4F0H-QI |
 | X post URL | https://x.com/Jaydevpromax/status/2051522134015685119?s=20 |
